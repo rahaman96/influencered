@@ -1,0 +1,49 @@
+.toggle_container{
+    background-color: red;
+    position: relative;
+    width: 70px;
+    height: 32px;
+    background-color: blue;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px; 
+    padding: 2px;
+}
+.normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 38px;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    color: wheat;
+    background-color: red;
+    box-shadow: 0 2px 4px rgba(0.0.0.0.25);
+    padding: 8px 12px;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+.toggle_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 38px;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    color: wheat;
+    background-color: purple;
+    box-shadow: 0 2px 4px rgba(0.0.0.0.25);
+    padding: 8px 12px;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.2s ease;
+}
+.disable{
+    /* background-color: red; */
+    left: 2px;
+}

@@ -1,0 +1,360 @@
+@media only screen and (max-width: 360px) {
+  .brandPages {
+    margin-top: -2150px;
+  }
+
+}
+
+@media (min-width: 361px) and (max-width:375px) {
+  .brandPages {
+    margin-top: -2200px;
+  }
+}
+
+@media (min-width: 376px) and (max-width:390px) {
+  .brandPages {
+    margin-top: -2270px;
+  }
+}
+
+@media (min-width: 391px) and (max-width:393px) {
+  .brandPages {
+    margin-top: -2300px;
+  }
+}
+
+@media (min-width: 394px) and (max-width:400px) {
+  .brandPages {
+    margin-top: -2320px;
+  }
+}
+
+@media (min-width: 401px) and (max-width:414px) {
+  .brandPages {
+    margin-top: -2380px;
+  }
+}
+/* Influencer Card start */
+/* .scrollbar-track::-webkit-scrollbar-thumb{
+  color: #000000 !important;
+  background-color: #000000 !important;
+} */
+
+.scrollbar_thin::-webkit-scrollbar {
+  width: 4px;
+
+}
+/* .scrollbar_thin{
+  width: 2px;
+} */
+.scrollbar_thin::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+
+}
+/* Influencer Card end */
+
+/* brandCard start */
+.scrollbar_thins {
+  direction: rtl;
+
+}
+
+.card {
+  direction: ltr;
+
+}
+
+.scrollbar_thins::-webkit-scrollbar {
+  width: 6px;
+  background-color: black;
+}
+
+.scrollbar_thins::-webkit-scrollbar-track {
+  margin-top: 20px;
+}
+
+.scrollbar_thins::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 10px;
+
+}
+
+/* .scrollbar_thin::-webkit-scrollbar-track {
+  border-left: 9px solid white;
+  border-right: 9px solid white;
+  height: 10px;
+  width: 2px;
+} */
+
+
+/* brandCard end */
+
+
+/* Deliverables start */
+/* Deliverables End*/
+
+/* Works start */
+/* .scrollbar_works::-webkit-scrollbar-track {
+  margin-top: 30px;
+} */
+.scrollbar_works {
+  direction: rtl;
+  /* margin-left: -100px;
+  padding-left: -100px; */
+
+}
+
+.brandCard {
+  direction: ltr;
+  /* padding-left: -100px; */
+
+}
+
+.scrollbar_works::-webkit-scrollbar {
+  height: 118px;
+  width: 4px !important;
+
+}
+
+
+.scrollbar_works::-webkit-scrollbar-thumb {
+  /* height: 10px; */
+  border-radius: 10px;
+  
+}
+
+
+
+
+@media only screen and (max-width: 360px) {
+  .brandCard {
+    margin-top: -390px;
+
+  }
+
+}
+
+@media (min-width: 361px) and (max-width:375px) {
+  .brandCard {
+    margin-top: -390px;
+
+  }
+
+
+
+}
+
+@media (min-width: 376px) and (max-width:390px) {
+  .brandCard {
+    margin-top: -390px;
+
+  }
+
+
+}
+
+@media (min-width: 391px) and (max-width:393px) {
+  .brandCard {
+    margin-top: -390px;
+
+  }
+
+}
+
+@media (min-width: 394px) and (max-width:400px) {
+  .brandCard {
+    margin-top: -390px;
+
+  }
+
+
+}
+
+@media (min-width: 401px) and (max-width:414px) {
+  .brandCard {
+    margin-top: -390px;
+
+  }
+
+
+}
+
+/* Works end */
+
+.chat{
+  border-bottom-width: 4px;
+}
+
+/* brandCard End */
+
+/* Featuers for page start */
+.scrollbar_features::-webkit-scrollbar {
+  width: 4px !important;
+
+}
+.scrollbar_features {
+  direction: rtl;
+  overflow-y: auto;
+  margin-left: -50px
+}
+
+.features {
+  direction: ltr;
+  padding-left: -50px;
+}
+
+/* 
+.featuresSec{
+  background-color: red;
+  border-bottom: 5px;
+  border-color: green;
+} */
+
+@media only screen and (max-width: 360px) {
+  .track {
+    border-bottom-width: 4px;
+    border-bottom-color: #5A914D;
+    padding-bottom: 4px;
+  
+  }
+
+}
+
+
+.scrollbar_features::-webkit-scrollbar-track {
+  margin-top: 15px;
+  width: 10px;
+
+}
+
+/* .scrollbar_features::-webkit-scrollbar-thin {
+  background-color: red;
+
+} */
+
+.scrollbar_features::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+.scrollbar_features::-webkit-scrollbar-thumb {
+  height: 10px;
+  border-radius: 10px;
+
+}
+
+@media only screen and (max-width: 360px) {
+  .scrollbar_features {
+    overflow-y: hidden;
+    margin-left: 0px
+  }
+
+}
+
+@media (min-width: 361px) and (max-width:375px) {
+  .scrollbar_features {
+    overflow-y: hidden;
+    margin-left: 0px
+  }
+
+
+
+}
+
+@media (min-width: 376px) and (max-width:390px) {
+  .scrollbar_features {
+    overflow-y: hidden;
+    margin-left: 0px
+  }
+
+
+}
+
+@media (min-width: 391px) and (max-width:393px) {
+  .scrollbar_features {
+    overflow-y: hidden;
+    margin-left: 0px
+  }
+
+}
+
+@media (min-width: 394px) and (max-width:400px) {
+  .scrollbar_features {
+    overflow-y: hidden;
+    margin-left: 0px
+  }
+
+
+}
+
+@media (min-width: 401px) and (max-width:414px) {
+  .scrollbar_features {
+    overflow-y: hidden;
+    margin-left: 0px
+  }
+
+
+}
+
+/* Featuers for page end */
+
+/* testimonials start */
+
+.cardTwo {
+  background: linear-gradient(91.77deg, #F7F6FB 1.11%, #F7F6FB 42.04%, #F7F6FB 70.51%, rgba(247, 246, 251, 0.6) 98.49%);
+  box-shadow: 0px 14.7511px 36.8776px rgba(0, 0, 0, 0.37);
+}
+
+.cardThree {
+  box-shadow: -7.37553px 36.8776px 36.8776px rgba(0, 0, 0, 0.25);
+}
+
+.cardFive {
+  background: linear-gradient(9.42deg, #E3E4E9 9.12%, rgba(227, 228, 233, 0.79) 67.11%, #E3E4E9 95.43%);
+}
+
+/* testimonials end */
+
+
+/* Footer  start */
+
+
+@media only screen and (max-width: 360px) {
+  .footerPage {
+    margin-top: -188px;
+  }
+
+}
+
+@media (min-width: 361px) and (max-width:375px) {
+  .footerPage {
+    margin-top: -187px;
+  }
+}
+
+@media (min-width: 376px) and (max-width:390px) {
+  .footerPage {
+    margin-top: -187px;
+  }
+}
+
+@media (min-width: 391px) and (max-width:393px) {
+  .footerPage {
+    margin-top: -187px;
+  }
+}
+
+@media (min-width: 394px) and (max-width:400px) {
+  .footerPage {
+    margin-top: -187px;
+  }
+}
+
+@media (min-width: 401px) and (max-width:414px) {
+  .footerPage {
+    margin-top: -187px;
+  }
+}
+
+
+/* Footer  start */

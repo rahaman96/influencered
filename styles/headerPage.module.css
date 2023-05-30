@@ -1,0 +1,30 @@
+@media only screen and (max-width: 360px) {
+    .mainImg {
+      margin-top: 41px;
+    }
+   
+  }
+  @media (min-width: 361px) and (max-width:375px) {
+    .mainImg {
+        margin-top: 29px;
+      }
+  }
+  
+  @media (min-width: 376px) and (max-width:390px) {
+    .mainImg {
+        margin-top: 18px;
+      }
+  }
+  
+  @media (min-width: 391px) and (max-width:393px) {
+    .mainImg {
+        margin-top: 16px;
+      }
+  }
+  
+  @media (min-width: 394px) and (max-width:400px) {
+    .mainImg {
+        margin-top: 10px;
+      }
+  }
+  

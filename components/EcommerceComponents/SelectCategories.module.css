@@ -1,0 +1,9 @@
+.categories{
+    /* background-color: rgb(90,145,77); */
+    background: linear-gradient(180deg, #114067 0%, #5A914D 100%);
+    border: #114067;
+}
+
+.textSeclect{
+    color: white;
+}
