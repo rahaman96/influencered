@@ -161,7 +161,7 @@ const ETarget = () => {
                                         <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
                                             {Language.map((data) => {
                                                 return (
-                                                    <div className={`cursor-pointer flex justify-cente md:px-6 px-2  items-center md:gap-8 gap-2 h-[34px] md:[236px] md:h-[56px]  border-[1.14px] border-[#000000] opacity-80 bg-[#EDFFE9] item rounded-full hover:bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] group-hover:text-white ${id.includes(data.id) ? styles.categories : ""}`}
+                                                    <div key={data} className={`cursor-pointer flex justify-cente md:px-6 px-2  items-center md:gap-8 gap-2 h-[34px] md:[236px] md:h-[56px]  border-[1.14px] border-[#000000] opacity-80 bg-[#EDFFE9] item rounded-full hover:bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] group-hover:text-white ${id.includes(data.id) ? styles.categories : ""}`}
                                                         onClick={() => handleClick(data.id)}
                                                     >
 

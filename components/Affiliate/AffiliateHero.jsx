@@ -73,7 +73,7 @@ const AffiliateHero = () => {
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
 
                                                     )
                                                 })}
@@ -108,7 +108,7 @@ const AffiliateHero = () => {
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
                                                     )
                                                 })}
                                             </>
@@ -139,7 +139,7 @@ const AffiliateHero = () => {
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
                                                     )
                                                 })}
                                             </>
@@ -170,7 +170,7 @@ const AffiliateHero = () => {
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
                                                     )
                                                 })}
                                             </>

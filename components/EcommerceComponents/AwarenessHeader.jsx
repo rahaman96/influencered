@@ -90,18 +90,7 @@ const AwarenessHeader = ({ headerData }) => {
                         onClose={() => setSuccessModal(false)}
                         show={successModal}
                     >
-                    <SuccessModalContent/>
-                        {/* <Wrapper>
-                            <div className="mx-auto  flex-wrap items-center justify-center  ">
-                                <div className='flex mb-14 h- mt-[140px] items-center justify-center'>
-                                    <AiOutlineArrowLeft />
-                                </div>
-                                <div className=' flex items-center justify-center'>
-                                    <h6 className='text-[#000000] text-[36px] leading-[50px] text-center  font-medium md:w-[811px]'>You have successfully signed up with your campaign details will reach you soon</h6>
-
-                                </div>
-                            </div>
-                        </Wrapper> */}
+                        <SuccessModalContent />
                     </SignupSuccessfull>
                     {/* SignupSuccessfull */}
                     <Wrapper className='flex  justify-between'>
@@ -130,12 +119,12 @@ const AwarenessHeader = ({ headerData }) => {
 
                         <div className='flex gap-6'>
 
-                        <div className='text-white'>
-                           <DesktopMenu
-                                showCatMenu={showCatMenu}
-                                setshowCatMenu={setshowCatMenu}
-                            />
-                           </div>
+                            <div className='text-white'>
+                                <DesktopMenu
+                                    showCatMenu={showCatMenu}
+                                    setshowCatMenu={setshowCatMenu}
+                                />
+                            </div>
                             {mobileMenu && (
                                 <MobileMenu
                                     showCatMenu={showCatMenu}
@@ -161,7 +150,7 @@ const AwarenessHeader = ({ headerData }) => {
 
                     <Wrapper>
                         <div className='md:mt-16 mt-5'>
-                            <h6 className='text-[#FFFFFF] md:text-[52px] md:leading-[71px] md:w-[728px] md:h-[142px]' >{headerData ? headerData: localStorage?.getItem("headtext")}</h6>
+                            <h6 className='text-[#FFFFFF] md:text-[52px] md:leading-[71px] md:w-[728px] md:h-[142px]' >{headerData ? headerData : localStorage?.getItem("headtext")}</h6>
                         </div>
                     </Wrapper>
                 </div>

@@ -20,8 +20,6 @@ const BrandCard = () => {
 
     const onClickHandler = (order) => {
         setImageClicked((prevState) => ({
-            // ...prevState,
-
             [order]: !prevState[order],
             [!order]: prevState[order],
             [!order]: prevState[order]
@@ -46,25 +44,7 @@ const BrandCard = () => {
             title: 'Website traffic',
             description: 'Select this option if your campaign objective is to increase brand recognitionSelect this option if your'
         },
-
     ]
-
-    // const [cards, setCards] = useState([
-    //     { id: 1, isOpen: true },
-    //     { id: 2, isOpen: false },
-    //     { id: 3, isOpen: false }
-    // ]);
-
-    // const handleCardClick = (cardId) => {
-    //     const updatedCards = cards.map(card => {
-    //         if (card.id === cardId) {
-    //             return { ...card, isOpen: true };
-    //         }
-    //         return { ...card, isOpen: false };
-    //     });
-    //     setCards(updatedCards);
-    // };
-
     return (
         <>
             <div className='md:px-10'>
@@ -74,29 +54,11 @@ const BrandCard = () => {
                         <div className={`scrollbar-thin scrollbar-thumb-[#5A914D]  scrollbar-track-[#000000]  md:mt-10 md:h-[515px] md:overflow-y-scroll overflow-y-none ${styles.scrollbar_thin} `}>
                             <div className={`md:w-[502px h-full md:h-[515px] md:pr-12 `}>
 
-                                <div id="accordion-collapse" data-accordion="collapse" >
-                                    {/* <div className='md:p-6 p-3 border-[1px] border-[#5A914D] mt-5 md:w-[502px] rounded-[10px]'
-                                        onClick={() => { handleClick('ground'); onClickHandler("ground") }}
-                                        style={{ backgroundColor: active === 'ground' ? "black" : "#EDFFE9", }}
-                                        id="accordion-collapse-heading-1"
-                                    >
-                                        <div data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1" >
-                                            <button type="button" className="text-[23px] leading-[35px] md:text-[32px] md:leading-[48px] font-medium font-sans" style={{ color: active === 'ground' ? '#FFFFFF' : '#114067' }}>
-                                                <span>Affiliate marketing</span>
-                                            </button>
-                                        </div>
-                                        <div id="accordion-collapse-body-1" className="hidden" aria-labelledby="accordion-collapse-heading-1" >
-                                            <p className='text-[#114067] opacity-90 text-[11px] leading-[18px] md:text-[16px] md:leading-[25px] ' style={{ color: active === 'ground' ? '#FFFFFF' : '#114067' }}>
-                                                Select this option if your campaign objective is to
-                                                increase brand recognitionSelect this option if your campaign
-                                            </p>
-                                        </div>
-                                    </div> */}
-
+                                <div>
                                     {cardData.map((cardText) => {
                                         console.log('cardText', cardText)
                                         return (
-                                            <div className='md:p-6 p-3 border-[1px] border-[#5A914D] mt-5 md:w-[502px] rounded-[10px]'
+                                            <div key={cardText} className='md:p-6 p-3 border-[1px] border-[#5A914D] mt-5 md:w-[502px] rounded-[10px]'
                                                 onClick={() => { handleClick(cardText.id); onClickHandler(cardText.id) }}
                                                 style={{ backgroundColor: active === cardText.id ? "black" : "#EDFFE9", }}
 
@@ -123,45 +85,6 @@ const BrandCard = () => {
                                             </div>
                                         )
                                     })}
-
-
-
-
-                                    {/* <div className='md:p-6 p-3 border-[1px] border-[#5A914D] mt-5 md:w-[502px] rounded-[10px]'
-                                        onClick={() => { handleClick('first'); onClickHandler("first") }}
-                                        style={{ backgroundColor: active === 'first' ? "black" : "#EDFFE9", }}
-                                        id="accordion-collapse-heading-2"
-                                    >
-                                        <div data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-                                            <button type="button" className="text-[#114067] text-[23px] leading-[35px] md:text-[32px] md:leading-[48px] font-medium font-sans" style={{ color: active === 'first' ? '#FFFFFF' : '#114067' }}>
-                                                <span>Content creation</span>
-                                            </button>
-                                        </div>
-                                        <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
-                                            <p className='text-[#114067] opacity-90 text-[11px] leading-[18px] md:text-[16px] md:leading-[25px] ' style={{ color: active === 'first' ? '#FFFFFF' : '#114067' }}>
-                                                Select this option if your campaign objective is to
-                                                increase brand recognitionSelect this option if your campaign
-                                            </p>
-                                        </div>
-                                    </div> */}
-
-                                    {/* <div className='md:p-6 p-3 border-[1px] border-[#5A914D] mt-5 md:w-[502px] rounded-[10px]'
-                                        onClick={() => { handleClick("second"); onClickHandler("second"); }}
-                                        style={{ backgroundColor: active === 'second' ? "black" : "#EDFFE9" }}
-                                        id="accordion-collapse-heading-3"
-                                    >
-                                        <div data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
-                                            <button type="button" className="text-[#114067] text-[23px] leading-[35px] md:text-[32px] md:leading-[48px] font-medium font-sans" style={{ color: active === 'second' ? '#FFFFFF' : '#114067' }}>
-                                                <span>Website traffic</span>
-                                            </button>
-                                        </div>
-                                        <div id="accordion-collapse-body-3" className="hidden" aria-labelledby="accordion-collapse-heading-3">
-                                            <p className='text-[#114067] opacity-90 text-[11px] leading-[18px] md:text-[16px] md:leading-[25px] ' style={{ color: active === 'second' ? '#FFFFFF' : '#114067' }}>
-                                                Select this option if your campaign objective is to
-                                                increase brand recognitionSelect this option if your campaign
-                                            </p>
-                                        </div>
-                                    </div> */}
                                 </div>
                             </div>
                         </div>
