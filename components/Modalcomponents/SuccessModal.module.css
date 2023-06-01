@@ -1,0 +1,8 @@
+.image{
+    position: relative;
+}
+.check{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}

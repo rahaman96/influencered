@@ -5,7 +5,7 @@ const Works = () => {
     return (
         <>
             <div className='md:px-10'>
-                <div className='bg-[#EDFFE9] md:w-[1240px] w-[450px]  md:h-[952px]  h-[1139px md:mb-10 rounded-[10px] z-10 p-6 md:p-0 '>
+                <div className='bg-[#EDFFE9] md:w-[1240px] w-[450px]  md:h-[720px]  h-[1139px md:mb-10 rounded-[10px] z-10 p-6 md:p-0 '>
 
                     <div className="flex flex-wrap md:px-10  justify-between gap-6 md:gap-0">
                         {/* <div className={`md:w-[502px] h-full md:h-[789px] md:pr-12   md:mt- overflow-y-auto md:mt-6 scrollbar-thin scrollbar-thumb-[#5A914D]  scrollbar-track-[#000000]  md:overflow-y-scroll overflow-y-none ${styles.scrollbar_thin}  `}> */}
@@ -21,7 +21,7 @@ const Works = () => {
                                     Start now
                                 </button>
 
-                                <div className={`md:mt-16 mt-16 mb-6 md:mb-0 ${styles.brandCounter} `}>
+                                <div className={`md:mt-10 mt-16 mb-6 md:mb-0 ${styles.brandCounter} `}>
                                     <BrandCounter className='' />
                                 </div>
                             </div>

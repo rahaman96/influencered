@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 
 const AffiliateInterest = () => {
     const router = useRouter()
-
     return (
         <>
             <div>

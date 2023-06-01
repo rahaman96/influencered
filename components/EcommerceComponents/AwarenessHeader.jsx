@@ -11,6 +11,7 @@ import { AiOutlineArrowLeft } from 'react-icons/ai';
 
 import SignupModal from '../Modalcomponents/SignupModal'
 import SignupSuccessfull from '../Modalcomponents/SignUpSuccessful'
+import SuccessModalContent from '../Modalcomponents/SuccessModalContent'
 
 const AwarenessHeader = ({ headerData }) => {
     const [mobileMenu, setMobileMenu] = useState(false)
@@ -89,7 +90,8 @@ const AwarenessHeader = ({ headerData }) => {
                         onClose={() => setSuccessModal(false)}
                         show={successModal}
                     >
-                        <Wrapper>
+                    <SuccessModalContent/>
+                        {/* <Wrapper>
                             <div className="mx-auto  flex-wrap items-center justify-center  ">
                                 <div className='flex mb-14 h- mt-[140px] items-center justify-center'>
                                     <AiOutlineArrowLeft />
@@ -99,7 +101,7 @@ const AwarenessHeader = ({ headerData }) => {
 
                                 </div>
                             </div>
-                        </Wrapper>
+                        </Wrapper> */}
                     </SignupSuccessfull>
                     {/* SignupSuccessfull */}
                     <Wrapper className='flex  justify-between'>
@@ -159,7 +161,7 @@ const AwarenessHeader = ({ headerData }) => {
 
                     <Wrapper>
                         <div className='md:mt-16 mt-5'>
-                            <h6 className='text-[#FFFFFF] md:text-[52px] md:leading-[71px] md:w-[728px] md:h-[142px]' >{localStorage?.getItem("headtext")}</h6>
+                            <h6 className='text-[#FFFFFF] md:text-[52px] md:leading-[71px] md:w-[728px] md:h-[142px]' >{headerData ? headerData: localStorage?.getItem("headtext")}</h6>
                         </div>
                     </Wrapper>
                 </div>

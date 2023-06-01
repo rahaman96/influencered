@@ -5,10 +5,12 @@ import "swiper/css";
 // import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
-import SwiperPage from './Affiliate';
+// import SwiperPage from './Affiliate';
 import BrandAwareness from './BrandAwareness';
 import ContentCreation from './ContentCreation';
 import styles from '../../styles/AchiveHigher.module.css'
+import WebsiteTrafic from './WebsiteTraffic';
+import Affiliate from './Affiliate';
 const Featuers = () => {
     return (
         <>
@@ -44,7 +46,7 @@ const Featuers = () => {
                         }}
                     >
                         <SwiperSlide >
-                            <SwiperPage />
+                            <Affiliate />
                         </SwiperSlide>
                         <SwiperSlide >
                             <BrandAwareness />
@@ -52,37 +54,10 @@ const Featuers = () => {
                         <SwiperSlide >
                             <ContentCreation />
                         </SwiperSlide>
-
                         <SwiperSlide >
-                            <SwiperPage />
+                            <WebsiteTrafic/>
                         </SwiperSlide>
-                        <SwiperSlide >
-                            <BrandAwareness />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <ContentCreation />
-                        </SwiperSlide>
-
-                        <SwiperSlide >
-                            <SwiperPage />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <BrandAwareness />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <ContentCreation />
-                        </SwiperSlide>
-
-                        <SwiperSlide >
-                            <SwiperPage />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <BrandAwareness />
-                        </SwiperSlide>
-                        <SwiperSlide >
-                            <ContentCreation />
-                        </SwiperSlide>
-
+                    
                     </Swiper>
                     {/* Swiper End */}
                     <div className="mt-7 mb-5 flex justify-center items-center gap-[31px]">

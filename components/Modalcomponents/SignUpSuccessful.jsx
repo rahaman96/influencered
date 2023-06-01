@@ -16,7 +16,7 @@ const SignupSuccessfull = ({ show, onClose, children, title }) => {
 
     const modalContent = show ? (
         <StyledModalOverlay>
-            <StyledModal className="mt-[50px] md:mt-[560px] w-full h-[221px md:w-[994px] h-[460px] shadow-lg ">
+            <StyledModal className="mt-[50px] md:mt-[100px]  w-full h-[221px md:w-[994px] h-[460px] shadow-lg ">
                 <StyledModalHeader className="px-6 pt-4">
                     <a href="#" onClick={handleCloseClick}>
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">

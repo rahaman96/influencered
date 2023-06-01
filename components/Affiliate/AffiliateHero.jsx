@@ -24,9 +24,11 @@ console.log('selectData', selectData);
 
 const AffiliateHero = () => {
     const [cardExpand, setCardExpand] = useState("")
-    const handChange = (e, cardName) => {
+    const [ncardname,setnextcardname]=useState('')
+    const handChange = (e, cardName,ncardname) => {
         if (e.target.checked === true) {
             setCardExpand(cardName)
+            setnextcardname(ncardname)
         } else {
             setCardExpand("")
         }
@@ -54,7 +56,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'brandAwareness'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'brandAwareness')} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'brandAwareness'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'brandAwareness',"Brand Awarness")} />
                                     </div>
                                 </div>
                                 <div className='mb-4'>
@@ -88,7 +90,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'AffiliateMarketing'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'AffiliateMarketing')} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'AffiliateMarketing'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'AffiliateMarketing',"Affilite Marketing")} />
 
                                     </div>
                                 </div>
@@ -120,7 +122,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'Content'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'Content')} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'Content'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'Content',"Content Creation to Reuse")} />
 
                                     </div>
                                 </div>
@@ -130,7 +132,7 @@ const AffiliateHero = () => {
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
                                     <div className="flex flex-wrap gap-2  md:gap-6">
-                                    <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
+                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
                                         <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram Stories</p>
                                         {
                                             cardExpand === 'Content' ? <>
@@ -152,7 +154,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'WebsiteTraffic'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'WebsiteTraffic')} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'WebsiteTraffic'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'WebsiteTraffic','Website Traffic')} />
                                     </div>
                                 </div>
                                 <div className='mb-4'>
@@ -161,7 +163,7 @@ const AffiliateHero = () => {
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
                                     <div className="flex flex-wrap gap-2  md:gap-6">
-                                    <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
+                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
                                         <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram Stories</p>
                                         {
                                             cardExpand === 'WebsiteTraffic' ? <>
@@ -180,7 +182,11 @@ const AffiliateHero = () => {
                         </div>
                         {/* Card End */}
 
-                        <div className='flex justify-center py-14 ' onClick={() => router.push('affiliateinterest')} >
+                        <div className='flex justify-center py-14 '
+                            //  onClick={() => router.push('affiliateinterest')} 
+                            onClick={() => router.push({ pathname: 'edetail', query: { name: ncardname, second: 'brand Awer', eData: 'ground' } })}
+
+                        >
                             <button className='text-center  w-[221px] h-[50px] border-[1px border-[#114067 rounded-[5px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] text-[#FFFFFF] text-[20px] leading-[24px] font-medium font-sans '>
                                 Next
                             </button>

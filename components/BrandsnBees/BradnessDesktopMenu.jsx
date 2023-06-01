@@ -1,12 +1,3 @@
-// import React from 'react'
-
-// const BradnessDesktopMenu = () => {
-//   return (
-//     <div>BradnessDesktopMenu</div>
-//   )
-// }
-
-// export default BradnessDesktopMenu
 
 import React from 'react'
 import { BsChevronDown } from "react-icons/bs";  

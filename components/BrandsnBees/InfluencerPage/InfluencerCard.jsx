@@ -35,7 +35,7 @@ const InfluencerCard = () => {
     return (
         <>
             <div className='md:px-10'>
-                <div className='bg-[#EDFFE9] md:w-[1240px] w-[422px]   w-[364px md:h-[708px]  h-[928px] mb-10 rounded-[10px] z-10 '>
+                <div className='bg-[#EDFFE9] md:w-[1240px] w-[422px]   w-[364px md:h-[600px]  h-[928px] mb-10 rounded-[10px] z-10 '>
 
                     <div className="flex flex-wrap md:px-10  mx-auto items-center justify-between gap-6 md:gap-0">
                         <div className={`scrollbar-thin scrollbar-thumb-[#5A914D]  scrollbar-track-[#000000]  md:mt-10 md:h-[515px]  md:overflow-y-scroll overflow-y-none ${styles.scrollbar_thin} `}>

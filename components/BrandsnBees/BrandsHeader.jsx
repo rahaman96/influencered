@@ -15,18 +15,28 @@ import MobileMenu from '../Header/MobileMenu'
 import Wrapper from '../Wrapper'
 import BradnessDesktopMenu from './BradnessDesktopMenu';
 import BradnessMobileMenu from './BradnessMobileMenu';
+import SignupModal from '../Modalcomponents/SignupModal';
+import SignuoModalContent from '../Modalcomponents/SignuoModalContent';
 
 const BrandsHeader = () => {
     const [mobileMenu, setMobileMenu] = useState(false)
     const [showCatMenu, setshowCatMenu] = useState(false)
     const [show, setShow] = useState("translate-y-0")
     const [lastScrollY, setLastScrollY] = useState(0)
+    const [showModal, setShowModal] = useState(false);
+
     const router = useRouter()
 
     return (
         <>
             <header className={`w-full  z-20  top-0 transition-transform duration-300 ${show}`}>
                 <div className="py-10 bg-[#EDFFE9] md:h-[700px]  h-[750px] min-h-ful">
+                    <SignupModal
+                        onClose={() => setShowModal(false)}
+                        show={showModal}
+                    >
+                        <SignuoModalContent />
+                    </SignupModal>
 
                     <Wrapper className='flex  justify-between'>
                         {/* Mobile menu start */}
@@ -54,7 +64,7 @@ const BrandsHeader = () => {
 
                         <div className='flex gap-6'>
 
-                            <BradnessDesktopMenu 
+                            <BradnessDesktopMenu
                                 showCatMenu={showCatMenu}
                                 setshowCatMenu={setshowCatMenu}
                             />
@@ -71,7 +81,7 @@ const BrandsHeader = () => {
                                     Login
                                 </div>
 
-                                <div className='text-[#000000] opacity-80 mt-2 md:mt-0 text-[14px] md:text-[18px] md:leading-[22px]  leading-[17px] font-medium font-sans border-[1px] border-[#000000] border-opacity-80 md:w-[177px] md:h-[50px] w-[91px] h-[31px] flex items-center justify-center cursor-pointer'>
+                                <div className='text-[#000000] opacity-80 mt-2 md:mt-0 text-[14px] md:text-[18px] md:leading-[22px]  leading-[17px] font-medium font-sans border-[1px] border-[#000000] border-opacity-80 md:w-[177px] md:h-[50px] w-[91px] h-[31px] flex items-center justify-center cursor-pointer' onClick={() => setShowModal(true)}>
                                     Signup
                                 </div>
                                 {/* BsCart icon end */}

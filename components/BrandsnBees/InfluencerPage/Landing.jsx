@@ -11,18 +11,29 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { VscChromeClose } from "react-icons/vsc";
 import { TbMathGreater } from 'react-icons/tb'
 import { AiOutlineMenu } from 'react-icons/ai'
-
+import SignupModal from '@/components/Modalcomponents/SignupModal'
+import SignuoModalContent from '@/components/Modalcomponents/SignuoModalContent'
 const Landing = () => {
 
     const [mobileMenu, setMobileMenu] = useState(false)
     const [showCatMenu, setshowCatMenu] = useState(false)
     const [show, setShow] = useState("translate-y-0")
     const [lastScrollY, setLastScrollY] = useState(0)
+    const [showModal, setShowModal] = useState(false);
+
     const router = useRouter()
     return (
         <>
             <header className={`w-ful  z-20  top-0 transition-transform duration-300 ${show}`}>
                 <div className="py-10 bg-[#F2FFEF] md:w-[1349px] md:h-[759px]  h-[700px] w-[450px]">
+                    <SignupModal
+                        onClose={() => setShowModal(false)}
+                        show={showModal}
+
+                    >
+                    <SignuoModalContent/>
+                    </SignupModal>
+
                     <Wrapper className='flex  justify-between'>
                         {/* Mobile menu start */}
                         <div className='md:hidden visible w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-cente items-center hover:bg-black/[0.05] cursor-pointer relative'>
@@ -66,7 +77,7 @@ const Landing = () => {
                                     Login
                                 </div>
 
-                                <div className='text-[#000000] mt-2 md:mt-0 text-[14px] md:text-[18px] md:leading-[22px]  leading-[17px] font-medium font-sans border-[1px] border-[#000000] md:w-[177px] md:h-[50px] w-[91px] h-[31px] flex items-center justify-center cursor-pointer '>
+                                <div className='text-[#000000] mt-2 md:mt-0 text-[14px] md:text-[18px] md:leading-[22px]  leading-[17px] font-medium font-sans border-[1px] border-[#000000] md:w-[177px] md:h-[50px] w-[91px] h-[31px] flex items-center justify-center cursor-pointer ' onClick={() => setShowModal(true)}>
                                     Signup
                                 </div>
                                 {/* BsCart icon end */}

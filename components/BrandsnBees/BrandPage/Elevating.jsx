@@ -7,6 +7,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { VscChromeClose } from "react-icons/vsc";
 import { AiOutlineMenu } from 'react-icons/ai'
+import SignupModal from '@/components/Modalcomponents/SignupModal'
+import SignuoModalContent from '@/components/Modalcomponents/SignuoModalContent'
 
 const Elevating = () => {
 
@@ -14,11 +16,19 @@ const Elevating = () => {
     const [showCatMenu, setshowCatMenu] = useState(false)
     const [show, setShow] = useState("translate-y-0")
     const [lastScrollY, setLastScrollY] = useState(0)
+    const [showModal, setShowModal] = useState(false);
+
     const router = useRouter()
     return (
         <>
             <header className={`w-ful  z-20  top-0 transition-transform duration-300 ${show}`}>
                 <div className="py-10 bg-[#F2FFEF] md:w-[1349px] md:h-[759px]  h-[700px] w-[450px w-full">
+                    <SignupModal
+                        onClose={() => setShowModal(false)}
+                        show={showModal}
+                    >
+                        <SignuoModalContent />
+                    </SignupModal>
                     <Wrapper className='flex  justify-between'>
                         {/* Mobile menu start */}
                         <div className='md:hidden visible w-8 md:w-12  h-8 md:h-12 rounded-full flex justify-cente items-center hover:bg-black/[0.05] cursor-pointer relative'>
@@ -50,21 +60,21 @@ const Elevating = () => {
                                 setshowCatMenu={setshowCatMenu}
                             />
                             {mobileMenu && (
-                                <div className='bg-red-300'> 
+                                <div className='bg-red-300'>
                                     <MobileMenu
                                         showCatMenu={showCatMenu}
                                         setshowCatMenu={setshowCatMenu}
                                         setMobileMenu={setMobileMenu}
-                                     />
+                                    />
                                 </div>
                             )}
                             {/* Icon start */}
                             <div className="flex items-cente gap-10 text-black">
-                                <div className='text-[#000000] text-[14px] leading-[17px] md:text-[18px] md:leading-[22px]   font-medium font-sans md:pt-3 pt-3 cursor-pointer' onClick={() => router.push('grow/personaldetails')}>
+                                <div className='text-[#000000] text-[14px] leading-[17px] md:text-[18px] md:leading-[22px]   font-medium font-sans md:pt-3 pt-3 cursor-pointer' onClick={() => router.push('grow/personaldetail')}>
                                     Login
                                 </div>
 
-                                <div className='text-[#000000] mt-2 md:mt-0 text-[14px] md:text-[18px] md:leading-[22px]  leading-[17px] font-medium font-sans border-[1px] border-[#000000] md:w-[177px] md:h-[50px] w-[91px] h-[31px] flex items-center justify-center cursor-pointer '>
+                                <div className='text-[#000000] mt-2 md:mt-0 text-[14px] md:text-[18px] md:leading-[22px]  leading-[17px] font-medium font-sans border-[1px] border-[#000000] md:w-[177px] md:h-[50px] w-[91px] h-[31px] flex items-center justify-center cursor-pointer' onClick={() => setShowModal(true)}>
                                     Signup
                                 </div>
                                 {/* BsCart icon end */}
