@@ -1,68 +1,104 @@
-.navText{
-    color: #114067;
-    font-size: 30px;
-    font-weight: 500;
+.navText {
+	color: #114067;
+	font-size: 30px;
+	font-weight: 500;
 }
 
 
 
 @media only screen and (max-width: 360px) {
-	.navText{
-        font-size: 15px;
-        width: 250px;
-        /* background-color: red; */
-    }
+	/* .navText {
+		font-size: 15px;
+		width: 250px;
+
+	} */
+	.select{
+		
+		margin-left: -6px;
+	}
+	.text{
+		width:1078px;
+	}
+	.navText {
+		font-size: 8px;
+		width: 900px;
+
+	}
 }
 
 @media (min-width: 361px) and (max-width:375px) {
-   
-	
+	.select{
+		
+		margin-left: -12px;
+	}
+	.text{
+		width:1000px;
+	}
+	.navText {
+		font-size: 9px;
+		width: 900px;
+
+	}
 }
 
 @media (min-width: 376px) and (max-width:390px) {
-  
-	.slider .slide_track {
-		width: calc(170px * 2);
-	}
 
-	.slider .slide img {
-		width: 100%;
-		height: 100px;
+	.select{
+		
+		margin-left: -12px;
+	}
+	.text{
+		width:1000px;
+	}
+	.navText {
+		font-size: 9px;
+		width: 900px;
+
 	}
 }
 
 @media (min-width: 391px) and (max-width:393px) {
-	.slider .slide_track {
-		width: calc(170px * 2);
+	.select{
+		
+		margin-left: -12px;
 	}
+	.text{
+		width:1000px;
+	}
+	.navText {
+		font-size: 9px;
+		width: 900px;
 
-	.slider .slide img {
-		width: 100%;
-		height: 100px;
 	}
 }
 
 @media (min-width: 394px) and (max-width:400px) {
-	.slider .slide_track {
-		width: calc(190px * 2);
+	.select{
+		
+		margin-left: -12px;
 	}
+	.text{
+		width:663px;
+	}
+	.navText {
+		font-size: 12px;
+		width: 835px;
 
-	.slider .slide img {
-		width: 100%;
-		height: 100px;
 	}
 }
 
 @media (min-width: 401px) and (max-width:414px) {
-    .helpingMain{
-        width: 400px;
-        }
-	.slider .slide_track {
-		width: calc(180px * 2);
+	.select{
+		
+		margin-left: -12px;
+	}
+	.text{
+		width: 596px;
+	}
+	.navText {
+		font-size: 12px;
+		width: 780px;
+
 	}
 
-	.slider .slide img {
-		width: 100%;
-		height: 100px;
-	}
 }

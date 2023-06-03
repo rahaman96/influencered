@@ -7,11 +7,15 @@ import Footer from '../Home/Footer'
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useRouter } from 'next/router';
 import AwarenessHeader from './AwarenessHeader'
+import SignupModal from '../Modalcomponents/SignupModal'
+
+import SignuoModalContent from '../Modalcomponents/SignuoModalContent'
+import EcampainSignupModal from '../Modalcomponents/EcampainSignupModal'
 
 const ECampain = () => {
     const router = useRouter()
     const headerData = router.query.name
-
+    const [showModal, setShowModal] = useState(false)
 
 
     const [counters, setCounters] = useState({
@@ -33,10 +37,10 @@ const ECampain = () => {
         if (storedCounters) {
             setCounters(JSON.parse(storedCounters));
             setTotal(counters.counter1 + counters.counter2 + counters.counter3 + counters.counter4 + counters.counter5 + counters.counter6 + counters.counter7);
-            setLevelSum(counters.counter8+counters.counter9+counters.counter10)
+            setLevelSum(counters.counter8 + counters.counter9 + counters.counter10)
         }
     },
-        [counters.counter1 + counters.counter2 + counters.counter3 + counters.counter4 + counters.counter5 + counters.counter6 + counters.counter7,counters.counter8+counters.counter9+counters.counter10]);
+        [counters.counter1 + counters.counter2 + counters.counter3 + counters.counter4 + counters.counter5 + counters.counter6 + counters.counter7, counters.counter8 + counters.counter9 + counters.counter10]);
 
     const updateCounter = (id, action) => {
         setCounters(prevCounters => {
@@ -68,11 +72,21 @@ const ECampain = () => {
     return (
         <>
             <div>
-                <AwarenessHeader headerData={headerData} />
-                <HeroNav />
-                <Wrapper>
+                <div >
+                    <EcampainSignupModal
+                        onClose={() => setShowModal(false)}
+                        show={showModal}
+                    >
+                        <SignuoModalContent />
+                    </EcampainSignupModal>
+                </div>
+                <div>
                     <section className="text-gray-600 body-font overflow-hidden">
+                        <AwarenessHeader headerData={headerData} />
+                        <HeroNav />
+
                         <div className="container px-5 py-10 md:py-24 flex justify-center mx-auto">
+
                             <div className="-my-8 divide-y-2 divide-gray-100">
                                 <div className="py-3 md:py-0 flex flex-wrap md:flex-nowrap">
 
@@ -326,26 +340,25 @@ const ECampain = () => {
                                         {/* Summery Start */}
                                         <div className='py-8 '>
                                             <h6 className='mb-6 text-[#000000] text-[25px] leading-[37px] font-medium text-center md:text-left '>Summery</h6>
-                                            <div className="gap-4 grid grid-cols- justify-center md:grid-cols-4">
-                                                <div className='py-4 px-6 w-[182px] h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
-                                                    <h6 className='mb-1 text-[#FFFFFF] text-[30px] leading-[45px] font-semibold '>
-
+                                            <div className="gap-4 grid grid-cols-2 justify-center md:grid-cols-4">
+                                                <div className='py-4 px-6 md:w-[182px] w-full h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
+                                                    <h6 className='mb-1 text-[#FFFFFF] text-[23px] md:text-[30px] md:leading-[45px] font-semibold '>
                                                         {total}
                                                     </h6>
-                                                    <p className=' text-[#FFFFFF] text-[17px] leading-[25px] font-medium font-sans'>Influencers</p>
+                                                    <p className=' text-[#FFFFFF] text-[14px] md:text-[17px] md:leading-[25px] font-medium font-sans'>Influencers</p>
                                                 </div>
 
-                                                <div className='py-4 px-6 w-[182px] h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
-                                                    <h6 className='mb-1 text-[#FFFFFF] text-[30px] leading-[45px] font-semibold '>{levelsum}</h6>
-                                                    <p className=' text-[#FFFFFF] text-[17px] leading-[25px] font-medium font-sans'>Total posts</p>
+                                                <div className='py-4 px-6 md:w-[182px] w-full h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
+                                                    <h6 className='mb-1 text-[#FFFFFF] text-[23px] md:text-[30px] md:leading-[45px] font-semibold '>{levelsum}</h6>
+                                                    <p className=' text-[#FFFFFF] text-[14px] md:text-[17px] md:leading-[25px] font-medium font-sans'>Total posts</p>
                                                 </div>
-                                                <div className='py-4 px-6 w-[182px] h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
-                                                    <h6 className='mb-1 text-[#FFFFFF] text-[30px] leading-[45px] font-semibold '>9,111</h6>
-                                                    <p className=' text-[#FFFFFF] text-[17px] leading-[25px] font-medium font-sans'>Estimated Reach</p>
+                                                <div className='py-4 px-6 md:w-[182px] h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
+                                                    <h6 className='mb-1 text-[#FFFFFF] text-[23px] md:text-[30px] md:leading-[45px] font-semibold '>9,111</h6>
+                                                    <p className=' text-[#FFFFFF] text-[14px] md:w-full w-[110px]  md:text-[17px] md:leading-[25px] font-medium font-sans'>Estimated Reach</p>
                                                 </div>
-                                                <div className='py-4 px-6 w-[182px] h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
-                                                    <h6 className='mb-1 text-[#FFFFFF] text-[30px] leading-[45px] font-semibold '>₹ 10,028</h6>
-                                                    <p className=' text-[#FFFFFF] text-[17px] leading-[25px] font-medium font-sans'>Approx Spending</p>
+                                                <div className='py-4 px-6 md:w-[182px] h-[108px] rounded-[9px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] '>
+                                                    <h6 className='mb-1 text-[#FFFFFF] text-[23px] md:text-[30px] md:leading-[45px] font-semibold '>₹ 10,028</h6>
+                                                    <p className=' text-[#FFFFFF] text-[14px] w-[110px] md:w-full md:text-[17px] md:leading-[25px] font-medium font-sans'>Approx Spending</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -353,14 +366,14 @@ const ECampain = () => {
                                         {/* Summery End */}
 
                                         {/* butto Start */}
-                                        <div className="flex gap-4 py-10 md:gap-10 mb-16 md:pb-0 justify-center"
+                                        <div className="flex gap-4 py-10 md:gap-10 mb- md:pb-0 justify-center"
                                         // onClick={() => router.push('etarget')} 
                                         // onClick={() => router.push({ pathname: 'etarget', query: { name: headerData } })}
                                         >
                                             <div className='w-[55px] h-[50px] border-[1px] border-[#114067] rounded-[5px] flex justify-center items-center '>
                                                 <AiOutlineArrowLeft />
                                             </div>
-                                            <button type="submit" className="text-[#FFFFFF] text-[20px] leading-[24px] font-medium rounded-[5px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] w-[221px] h-[50px] ">Next</button>
+                                            <button type="submit" className="text-[#FFFFFF] text-[20px] leading-[24px] font-medium rounded-[5px] bg-gradient-to-b from-[rgb(90,145,77)] to-[#0F3D68] w-[221px] h-[50px]" onClick={() => setShowModal(true)}>Next</button>
                                         </div>
                                         {/* butto End */}
 
@@ -368,14 +381,16 @@ const ECampain = () => {
                                 </div>
                             </div>
                         </div>
+
                     </section>
-                </Wrapper>
+                </div>
 
                 {/* Last Section start */}
                 <div>
                     <About />
                     <Footer />
                 </div>
+
                 {/* Last Section end */}
             </div>
         </>

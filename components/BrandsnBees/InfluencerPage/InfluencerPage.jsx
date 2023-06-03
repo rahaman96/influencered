@@ -25,7 +25,6 @@ const InfluencerPage = () => {
                 <div>
                     <div className='md:visible invisible'>
                         <InfluencerCard />
-                        {/* <BrandCard/> */}
                     </div>
                     <div className='visible md:hidden md:-mt-0 -mt-[980px]'>
                         <EarningPage />

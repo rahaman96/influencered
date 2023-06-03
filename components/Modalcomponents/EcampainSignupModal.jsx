@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 
-const SignupModal = ({ show, onClose, children, title }) => {
+const EcampainSignupModal = ({ show, onClose, children, title }) => {
     const [isBrowser, setIsBrowser] = useState(false);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const SignupModal = ({ show, onClose, children, title }) => {
 
     const modalContent = show ? (
         <StyledModalOverlay>
-            <StyledModal className="mt-[50px] md:mt-[100px] w-full h-[221px md:w-[994px] h-[500px] shadow-lg ">
+            <StyledModal className="mt-[215rem] md:mt-[190rem] w-full h-[221px md:w-[994px] h-[500px] shadow-lg ">
                 <StyledModalHeader className="px-6 pt-4">
                     <a href="#" onClick={handleCloseClick}>
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,4 +76,4 @@ const StyledModalOverlay = styled.div`
 const StyledModalTitle = styled.div`
   padding-left:0.1px
 `;
-export default SignupModal;
+export default EcampainSignupModal;

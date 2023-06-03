@@ -46,7 +46,6 @@ const BrandPage = () => {
                     <BrandCard />
                 </div>
                 <div className='md:invisible visible -mt-[1000px] md:-mt-0'>
-                    {/* <BrandCardExtra /> */}
                     <MobileBrandCard />
                 </div>
                 {/* BrandCard */}

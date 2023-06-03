@@ -24,8 +24,8 @@ console.log('selectData', selectData);
 
 const AffiliateHero = () => {
     const [cardExpand, setCardExpand] = useState("")
-    const [ncardname,setnextcardname]=useState('')
-    const handChange = (e, cardName,ncardname) => {
+    const [ncardname, setnextcardname] = useState('')
+    const handChange = (e, cardName, ncardname) => {
         if (e.target.checked === true) {
             setCardExpand(cardName)
             setnextcardname(ncardname)
@@ -56,7 +56,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'brandAwareness'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'brandAwareness',"Brand Awarness")} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'brandAwareness'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'brandAwareness', "Brand Awarness")} />
                                     </div>
                                 </div>
                                 <div className='mb-4'>
@@ -65,15 +65,22 @@ const AffiliateHero = () => {
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
 
-                                    <div className="flex flex-wrap gap-2  md:gap-6">
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram Stories</p>
+                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
+                                       
+                                            <div>
+                                                <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram posts</p>
+                                            </div>
+                                            <div className=''>
+                                                <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram Stories</p>
+
+                                            </div>
+                                       
                                         {
                                             cardExpand === 'brandAwareness' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF]  text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
 
                                                     )
                                                 })}
@@ -90,7 +97,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'AffiliateMarketing'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'AffiliateMarketing',"Affilite Marketing")} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'AffiliateMarketing'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'AffiliateMarketing', "Affilite Marketing")} />
 
                                     </div>
                                 </div>
@@ -100,15 +107,15 @@ const AffiliateHero = () => {
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
 
-                                    <div className="flex flex-wrap gap-2  md:gap-6">
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram Stories</p>
+                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
+                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center w-[142px] md:w-[152px] h-[26px]'>1x Instagram posts</p>
+                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center w-[142px] md:w-[152px] h-[26px]'>1x Instagram Stories</p>
                                         {
                                             cardExpand === 'AffiliateMarketing' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
                                                     )
                                                 })}
                                             </>
@@ -122,7 +129,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'Content'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'Content',"Content Creation to Reuse")} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'Content'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'Content', "Content Creation to Reuse")} />
 
                                     </div>
                                 </div>
@@ -131,15 +138,15 @@ const AffiliateHero = () => {
                                     <p className='mb-3 text-[#000000] text-[15px] leading-[22px] font-medium font-sans '>Select this option if your campaign objective
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
-                                    <div className="flex flex-wrap gap-2  md:gap-6">
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram Stories</p>
+                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
+                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram posts</p>
+                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram Stories</p>
                                         {
                                             cardExpand === 'Content' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
                                                     )
                                                 })}
                                             </>
@@ -154,7 +161,7 @@ const AffiliateHero = () => {
                                 <div className='flex justify-between mb-2'>
                                     <TbBulb className='bg-white border-[1px] border-[#114067] rounded-full w-[75px] h-[75px] py-2 px-2 ' />
                                     <div className='mt-2'>
-                                        <input id="helper-checkbox" checked={cardExpand === 'WebsiteTraffic'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'WebsiteTraffic','Website Traffic')} />
+                                        <input id="helper-checkbox" checked={cardExpand === 'WebsiteTraffic'} aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-[31px] h-[31px] text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" onChange={(e) => handChange(e, 'WebsiteTraffic', 'Website Traffic')} />
                                     </div>
                                 </div>
                                 <div className='mb-4'>
@@ -162,15 +169,15 @@ const AffiliateHero = () => {
                                     <p className='mb-3 text-[#000000] text-[15px] leading-[22px] font-medium font-sans '>Select this option if your campaign objective
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
-                                    <div className="flex flex-wrap gap-2  md:gap-6">
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram posts</p>
-                                        <p className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[152px] h-[26px]'>1x Instagram Stories</p>
+                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
+                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[142px] md:w-[152px] h-[26px]'>1x Instagram posts</p>
+                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[142px] md:w-[152px] h-[26px]'>1x Instagram Stories</p>
                                         {
                                             cardExpand === 'WebsiteTraffic' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[152px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
                                                     )
                                                 })}
                                             </>

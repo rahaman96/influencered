@@ -31,16 +31,21 @@ const BrandCard = () => {
     const cardData = [
         {
             id: 1,
-            title: 'Affiliate marketing',
+            title: 'Brand awareness ',
             description: 'Select this option if your campaign objective is to increase brand recognitionSelect this option if your'
         },
         {
             id: 2,
-            title: 'Content creation',
+            title: 'Affiliate marketing',
             description: 'Select this option if your campaign objective is to increase brand recognitionSelect this option if your'
         },
         {
             id: 3,
+            title: 'Content creation',
+            description: 'Select this option if your campaign objective is to increase brand recognitionSelect this option if your'
+        },
+        {
+            id: 4,
             title: 'Website traffic',
             description: 'Select this option if your campaign objective is to increase brand recognitionSelect this option if your'
         },
@@ -92,6 +97,7 @@ const BrandCard = () => {
                             {active===1 && <img src="../image/brandsness/card1.svg" alt="ground" />}
                             {active===2 && <img src="../image/brandsness/dashboard.svg" alt="first" />}
                             {active===3 &&  <img src="../image/brandsness/ziczac.svg" alt="second" />}
+                            {active === 4 && <img src="../image/brandsness/card1.svg" alt="ground" />}
 
                         </div>
 
