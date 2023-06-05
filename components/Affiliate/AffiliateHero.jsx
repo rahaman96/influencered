@@ -65,22 +65,17 @@ const AffiliateHero = () => {
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
 
-                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
-                                       
-                                            <div>
-                                                <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram posts</p>
-                                            </div>
-                                            <div className=''>
-                                                <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram Stories</p>
+                                    {/* <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6"> */}
+                                    <div className="flex flex-wrap gap-4 md:gap-4">
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
 
-                                            </div>
-                                       
                                         {
                                             cardExpand === 'brandAwareness' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF]  text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className={`bg-[#FFFFFF]  text-[1 md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px]  h-[26px] cursor-pointer  ${styles.Item}`}>{item.name}</p>
 
                                                     )
                                                 })}
@@ -107,15 +102,16 @@ const AffiliateHero = () => {
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
 
-                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
-                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center w-[142px] md:w-[152px] h-[26px]'>1x Instagram posts</p>
-                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center w-[142px] md:w-[152px] h-[26px]'>1x Instagram Stories</p>
+                                    <div className="flex flex-wrap gap-4 md:gap-4">
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
+
                                         {
                                             cardExpand === 'AffiliateMarketing' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className={`bg-[#FFFFFF]  text-[1 md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px]  h-[26px] cursor-pointer  ${styles.Item}`}>{item.name}</p>
                                                     )
                                                 })}
                                             </>
@@ -138,15 +134,16 @@ const AffiliateHero = () => {
                                     <p className='mb-3 text-[#000000] text-[15px] leading-[22px] font-medium font-sans '>Select this option if your campaign objective
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
-                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
-                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram posts</p>
-                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] w-[142px] h-[26px]'>1x Instagram Stories</p>
+                                    <div className="flex flex-wrap gap-4 md:gap-4">
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
+
                                         {
                                             cardExpand === 'Content' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF] text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className={`bg-[#FFFFFF]  text-[1 md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px]  h-[26px] cursor-pointer  ${styles.Item}`}>{item.name}</p>
                                                     )
                                                 })}
                                             </>
@@ -169,15 +166,16 @@ const AffiliateHero = () => {
                                     <p className='mb-3 text-[#000000] text-[15px] leading-[22px] font-medium font-sans '>Select this option if your campaign objective
                                         is to increase brand recognition</p>
                                     <h5 className='mb-6 text-[#000000] text-[18px] leading-[27px] font-medium font-sans '>Suggested deliverables</h5>
-                                    <div className="grid grid-cols-2 md:grid-cols-6 gap-2  md:gap-6">
-                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[142px] md:w-[152px] h-[26px]'>1x Instagram posts</p>
-                                        <p className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  w-[142px] md:w-[152px] h-[26px]'>1x Instagram Stories</p>
+                                    <div className="flex flex-wrap gap-4 md:gap-4">
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
+                                        <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
+
                                         {
                                             cardExpand === 'WebsiteTraffic' ? <>
                                                 {selectData.map((item) => {
 
                                                     return (
-                                                        <p key={item} className='bg-[#FFFFFF] text-[12px] md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px] w-[142px] h-[26px] cursor-pointer '>{item.name}</p>
+                                                        <p key={item} className={`bg-[#FFFFFF]  text-[1 md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center md:w-[172px]  h-[26px] cursor-pointer  ${styles.Item}`}>{item.name}</p>
                                                     )
                                                 })}
                                             </>

@@ -1,0 +1,43 @@
+@media only screen and (max-width: 360px) {
+    .Item {
+        width: 132px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 361px) and (max-width:375px) {
+
+    .Item {
+        width: 140px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 376px) and (max-width:390px) {
+
+    .Item {
+        width: 148px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 391px) and (max-width:393px) {
+    .Item {
+        width: 148px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 394px) and (max-width:400px) {
+    .Item {
+        width: 153px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 401px) and (max-width:414px) {
+    .Item {
+        width: 155px;
+        font-size: 13px;
+    }
+}
