@@ -19,6 +19,12 @@ const ERequirments = () => {
     };
     const headerData = router.query.name
 
+    const [sliderValue, setSliderValue] = useState(10000);
+
+    const handleSliderChange = (event) => {
+        setSliderValue(event.target.value);
+    };
+
     return (
         <>
             <div>
@@ -50,24 +56,26 @@ const ERequirments = () => {
                                                 />
                                             </div> */}
 
-                                            
+
                                             <input
                                                 className="md:w-[648px] w-full h-[6px] rounded  bg-gradient-to-t  [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-white/25 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[24px] [&::-webkit-slider-thumb]:w-[24px] [&::-webkit-slider-thumb]:rounded-full appearance-none [&::-webkit-slider-thumb]:bg-gradient-to-t from-[#5A914D] to-[#0F3D68]"
                                                 type="range"
-                                                id="vol"
-                                                name="vol"
-                                                min="0"
-                                                max="100"
-                                                onInput={(e) => {
-                                                    const value = e.target.value;
-                                                    e.target.style.background = `linear-gradient(to right, #34675a 0%, #34675a ${value}%, #bbcabc ${value}%, #bbcabc 100%)`;
-                                                }}
+                                                min="10000"
+                                                max="20000"
+                                                value={sliderValue}
+                                                onChange={handleSliderChange}
+                                                // onInput={(e) => {
+                                                //     const value = e.target.value;
+                                                //     e.target.style.background = `linear-gradient(to right, #34675a 0%, #34675a ${value}%, #bbcabc ${value}%, #bbcabc 100%)`;
+                                                // }}
                                             />
-                                            <div className='flex justify-between mt-2 md:w-[648px]'>
+                                            <div className="tooltip">{sliderValue}</div>
+
+                                            {/* <div className='flex justify-between mt-2 md:w-[648px]'>
                                                 <p className='text-[#000000] text-[18px] leading-[27px] font-normal font-sans '>Min: 10000</p>
-                                                <p className='text-[#000000] text-[18px] leading-[27px] font-normal font-sans '>Max: 20000</p>
-                                            </div>
-                                             {/* Multi Range Slider End*/}
+                                                <p className='text-[#000000] text-[18px] leading-[27px] font-normal font-sans '>Max: {sliderValue}</p>
+                                            </div> */}
+                                            {/* Multi Range Slider End*/}
 
                                         </div>
                                         <div className='md:mt-8'>
@@ -87,12 +95,12 @@ const ERequirments = () => {
                                             <p className='mb-4 text-[#000000] text-[16px] md:text-[25px] md:leading-[38px] leading-[24px] font-medium font-sans'>
                                                 Are you executing a campaign for the first time?*
                                             </p>
-                                        
+
                                             <div className={`${styles.toggleMain}`} >
-                                                <div className={!toggle? `${styles.no}`:`${styles.yes}`} onClick={()=>setToggle(false)}>
+                                                <div className={!toggle ? `${styles.no}` : `${styles.yes}`} onClick={() => setToggle(false)}>
                                                     No
                                                 </div>
-                                                <div className={toggle? `${styles.no}`:`${styles.yes}`} onClick={()=>setToggle(true)}>
+                                                <div className={toggle ? `${styles.no}` : `${styles.yes}`} onClick={() => setToggle(true)}>
                                                     Yes
                                                 </div>
                                             </div>
