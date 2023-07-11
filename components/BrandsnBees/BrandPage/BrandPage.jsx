@@ -2,7 +2,7 @@ import React from 'react'
 import Elevating from './Elevating'
 import Results from './Results'
 import BrandCard from './BrandCard'
-// import Deliverables from './Deliverables'
+import Deliverables from './Deliverables'
 import Wrapper from '@/components/Wrapper'
 import styles from '../../../styles/BrandPage.module.css'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,18 +20,18 @@ import MobileBrandCard from '../MobileView/MobileBrandCard'
 import MobileFeatures from '../MobileView/MobileFeatures'
 
 
-// const data = [
-//     { id: 1, name: "Instagram post", url: "/" },
-//     { id: 2, name: "Unboxing product", url: "/Unboxing product" },
-//     { id: 3, name: "Youtube videos" },
-//     { id: 4, name: "Short videos" },
-//     { id: 5, name: "Website clicks" },
-//     { id: 6, name: "Website views" },
-//     { id: 7, name: "Memes creation" },
-//     { id: 8, name: "Instagram reels" },
+const data = [
+    { id: 1, name: "Instagram post", url: "/" },
+    { id: 2, name: "Unboxing product", url: "/Unboxing product" },
+    { id: 3, name: "Youtube videos" },
+    { id: 4, name: "Short videos" },
+    { id: 5, name: "Website clicks" },
+    { id: 6, name: "Website views" },
+    { id: 7, name: "Memes creation" },
+    { id: 8, name: "Instagram reels" },
 
-// ];
-// console.log('data', data);
+];
+console.log('data', data);
 
 const BrandPage = () => {
     return (
@@ -58,7 +58,7 @@ const BrandPage = () => {
                         </h6>
                     </Wrapper>
 
-                    {/* <div className='md:w-[1240px] grid md:grid-cols-4 invisible md:visible'>
+                    <div className='md:w-[1240px] grid md:grid-cols-4 invisible md:visible'>
                         {data.map((item) => {
                             return (
                                 <>
@@ -69,7 +69,7 @@ const BrandPage = () => {
 
                         })}
                        
-                    </div> */}
+                    </div>
 
 
                     <div className={`md:hidden visible ${styles.brandPages} `}>
@@ -98,7 +98,7 @@ const BrandPage = () => {
                                 },
                             }}
                         >
-                            {/* {data.map((item) => {
+                            {data.map((item) => {
                                 return (
                                     <>
                                         <SwiperSlide>
@@ -107,7 +107,7 @@ const BrandPage = () => {
                                     </>
                                 )
 
-                            })} */}
+                            })}
                         </Swiper>
                     </div>
                 </div>
