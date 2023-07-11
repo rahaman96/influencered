@@ -62,7 +62,7 @@ const BrandPage = () => {
                         {data.map((item) => {
                             return (
                                 <>
-                                    <Deliverables name={item.name} />
+                                    {/* <Deliverables name={item.name} /> */}
 
                                 </>
                             )
