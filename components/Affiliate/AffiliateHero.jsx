@@ -8,19 +8,19 @@ import AffliateHeader from './AffiliateHeader'
 import HeroHeader from '../EcommerceComponents/HeroHeader'
 import styles from './AffiliateHero.module.css'
 
-const selectData = [
-    { id: 1, name: 'Promotional Video ads' },
-    { id: 2, name: 'Instagram Posts' },
-    { id: 3, name: 'YouTube Posts' },
-    { id: 4, name: 'Product unboxing' },
-    { id: 5, name: 'Try the product and review' },
-    { id: 6, name: 'Short form videos' },
-    { id: 7, name: 'Memes' },
-    { id: 8, name: 'Pre-release campaigns' },
-    { id: 9, name: 'Tips and tricks' },
+// const selectData = [
+//     { id: 1, name: 'Promotional Video ads' },
+//     { id: 2, name: 'Instagram Posts' },
+//     { id: 3, name: 'YouTube Posts' },
+//     { id: 4, name: 'Product unboxing' },
+//     { id: 5, name: 'Try the product and review' },
+//     { id: 6, name: 'Short form videos' },
+//     { id: 7, name: 'Memes' },
+//     { id: 8, name: 'Pre-release campaigns' },
+//     { id: 9, name: 'Tips and tricks' },
 
-]
-console.log('selectData', selectData);
+// ]
+// console.log('selectData', selectData);
 
 const AffiliateHero = () => {
     const [cardExpand, setCardExpand] = useState("")
@@ -70,7 +70,7 @@ const AffiliateHero = () => {
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
 
-                                        {
+                                        {/* {
                                             cardExpand === 'brandAwareness' ? <>
                                                 {selectData.map((item) => {
 
@@ -82,7 +82,7 @@ const AffiliateHero = () => {
                                             </>
                                                 : null
 
-                                        }
+                                        } */}
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ const AffiliateHero = () => {
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
 
-                                        {
+                                        {/* {
                                             cardExpand === 'AffiliateMarketing' ? <>
                                                 {selectData.map((item) => {
 
@@ -116,7 +116,7 @@ const AffiliateHero = () => {
                                                 })}
                                             </>
                                                 : null
-                                        }
+                                        } */}
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@ const AffiliateHero = () => {
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
 
-                                        {
+                                        {/* {
                                             cardExpand === 'Content' ? <>
                                                 {selectData.map((item) => {
 
@@ -148,7 +148,7 @@ const AffiliateHero = () => {
                                                 })}
                                             </>
                                                 : null
-                                        }
+                                        } */}
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@ const AffiliateHero = () => {
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram posts</p>
                                         <p className={`bg-[#FFFFFF]  md:text-[14px] text-[#114067] leading-[21px] flex justify-center items-center  md:w-[152px] h-[26px] ${styles.Item}`}>1x Instagram Stories</p>
 
-                                        {
+                                        {/* {
                                             cardExpand === 'WebsiteTraffic' ? <>
                                                 {selectData.map((item) => {
 
@@ -180,7 +180,7 @@ const AffiliateHero = () => {
                                                 })}
                                             </>
                                                 : null
-                                        }
+                                        } */}
                                     </div>
                                 </div>
                             </div>
